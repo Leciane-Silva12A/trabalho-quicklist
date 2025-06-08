@@ -17,7 +17,7 @@ function showItemsList() {
     const sectionList = document.querySelector(".list")
     sectionList.textContent = ""
 
-      items.sort((itemA, itemB) => Number(itemA.checked) - Number(itemB.checked))
+      itens.sort((itemA, itemB) => Number(itemA.checked) - Number(itemB.checked))
 
     items.map((item, index) => {
         sectionList.innerHTML += `
@@ -34,7 +34,7 @@ function showItemsList() {
                 <button onclick="removeItem('${item.name}')">
                     <img src="./assets/trash-icon.svg" alt="trash icon">
                 </button>
-            </div>Add commentMore actions
+            </div>
         `
     })
 }
